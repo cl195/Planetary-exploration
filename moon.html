@@ -1,0 +1,451 @@
+<!DOCTYPE html> <!-- Declare the document type as HTML5 -->
+<html lang="zh"> <!-- Specify the web language as Chinese -->
+<head>
+    <meta charset="UTF-8"> <!-- Set character encoding to UTF-8 to support various language characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design to ensure pages display correctly on mobile devices -->
+    <title>Solar System - The Moon</title> <!-- Page title, displayed on the browser tab -->
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the main stylesheet -->
+    <link rel="stylesheet" href="moon-styles.css"> <!-- Link to Moon Page Specialized Stylesheet -->
+    <!-- Add Font Awesome icon library for displaying various moon related icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="moon-page"> <!-- body adds moon-page class name for easy application of moon-specific styles and animations -->
+    <!-- Top navigation bar - add moon-specific styles with moon-nav -->
+    <nav class="top-nav moon-nav">
+        <div class="nav-content">
+            <div class="logo">Space Explorer</div> <!-- Website Logo/Name -->
+            <div class="nav-links"> <!-- Navigation links area -->
+                <a href="index.html" class="structure-link">STRUCTURE</a> <!-- Link to the Solar System Structure page -->
+                <a href="planet.html" class="planet-link">PLANET</a> <!-- Planetary Page Links -->
+                <a href="sun.html" class="sun-link">SUN</a> <!-- Sun Page Links -->
+                <a href="moon.html" class="active moon-link">MOON</a> <!-- Current page: moon, add active class to indicate current active state -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero/Banner Area - Lunar main visual that includes parallax effects -->
+    <div class="moon-hero">
+        <div class="moon-parallax"> <!-- Parallax effect container with multiple parallax layers -->
+            <div class="stars-layer"></div> <!-- Background Star Layer -->
+            <div class="moon-image"></div> <!-- lunar image layer -->
+            <div class="clouds-layer"></div> <!-- Cloud effect layer to add a sense of atmosphere -->
+        </div>
+        <h1 class="moon-title">Earth's Faithful<br>Companion</h1> <!-- Main title, separated by two lines with line breaks -->
+    </div>
+
+    <!-- Main content area of the page -->
+    <div class="moon-content">
+        <div class="container">
+            <!-- Introduction to the Moon text area -->
+            <div class="moon-introduction">
+                <p class="intro-text"> <!-- Introductory paragraph with fade-in animation effect -->
+                    The Moon is Earth's only natural satellite and the fifth largest satellite in the Solar System. 
+                    It is the largest natural satellite relative to its planet in the Solar System. The Moon has been a 
+                    source of fascination for humanity throughout history, influencing our calendars, cultures, and 
+                    inspiring countless stories and myths.
+                </p>
+                <p class="intro-text"> <!-- Introduction to the second paragraph, delayed fade-in effect -->
+                    The Moon formed approximately 4.5 billion years ago, not long after Earth. The most widely 
+                    accepted explanation is that the Moon formed from the debris left over after a giant impact 
+                    between Earth and a Mars-sized body called Theia.
+                </p>
+            </div>
+
+            <!-- Lunar Phases Display Section - Showcases the 8 major phases of the Moon -->
+            <div class="moon-phases-section">
+                <h2 class="section-title">Phases of the Moon</h2> <!-- Chapter Title -->
+                <div class="phases-container"> <!-- Moon Phase Grid Container -->
+                    <!-- Lunar Phase 1: New Moon -->
+                    <div class="phase-item">
+                        <div class="phase-animation"> <!-- Moon Phase Animation Container -->
+                            <img src="images/moon/New Moon.jpg" alt="New Moon" class="phase-img"> <!-- Crescent Image -->
+                        </div>
+                        <h3>New Moon</h3> <!-- Crescent Title -->
+                        <p>When the Moon is between Earth and the Sun, the side facing Earth is not illuminated.</p> <!-- Crescent Description -->
+                    </div>
+                    
+                    <!-- Moon Phase 2: Ember Moon -->
+                    <div class="phase-item">
+                        <div class="phase-animation">
+                            <img src="https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004768/frames/730x730_1x1_30p/moon.0034.jpg" alt="Waxing Crescent" class="phase-img">
+                        </div>
+                        <h3>Waxing Crescent</h3>
+                        <p>As the Moon moves away from the Sun, a small crescent becomes visible.</p>
+                    </div>
+                    
+                    <!-- Lunar Phase 3: Sagittarius Moon -->
+                    <div class="phase-item">
+                        <div class="phase-animation">
+                            <img src="https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004768/frames/730x730_1x1_30p/moon.0071.jpg" alt="First Quarter" class="phase-img">
+                        </div>
+                        <h3>First Quarter</h3>
+                        <p>Half of the visible side of the Moon is illuminated.</p>
+                    </div>
+                    <!-- Lunar Phase 4: Convex Moon -->
+                    <div class="phase-item">
+                        <div class="phase-animation">
+                            <img src="https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004768/frames/730x730_1x1_30p/moon.0106.jpg" alt="Waxing Gibbous" class="phase-img">
+                        </div>
+                        <h3>Waxing Gibbous</h3>
+                        <p>More than half of the visible side is illuminated, approaching full moon.</p>
+                    </div>
+                    
+                    <!-- Lunar Phase 5: Full Moon -->
+                    <div class="phase-item">
+                        <div class="phase-animation">
+                            <img src="https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004768/frames/730x730_1x1_30p/moon.0142.jpg" alt="Full Moon" class="phase-img">
+                        </div>
+                        <h3>Full Moon</h3>
+                        <p>The entire visible side of the Moon is illuminated.</p>
+                    </div>
+                    
+                    <!-- Lunar Phase 6: Lunar Convexity -->
+                    <div class="phase-item">
+                        <div class="phase-animation">
+                            <img src="https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004768/frames/730x730_1x1_30p/moon.0177.jpg" alt="Waning Gibbous" class="phase-img">
+                        </div>
+                        <h3>Waning Gibbous</h3>
+                        <p>The illuminated portion starts to decrease.</p>
+                    </div>
+                    
+                    <!-- Lunar Phase 7: Lower Sagittarius -->
+                    <div class="phase-item">
+                        <div class="phase-animation">
+                            <img src="https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004768/frames/730x730_1x1_30p/moon.0213.jpg" alt="Last Quarter" class="phase-img">
+                        </div>
+                        <h3>Last Quarter</h3>
+                        <p>Half of the visible side is illuminated, opposite to first quarter.</p>
+                    </div>
+                    
+                    <!-- Lunar phase item 8: waning moon -->
+                    <div class="phase-item">
+                        <div class="phase-animation">
+                            <img src="https://svs.gsfc.nasa.gov/vis/a000000/a004700/a004768/frames/730x730_1x1_30p/moon.0249.jpg" alt="Waning Crescent" class="phase-img">
+                        </div>
+                        <h3>Waning Crescent</h3>
+                        <p>A small crescent remains visible before returning to new moon.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Lunar Information Grid - displays key lunar data and information -->
+            <div class="moon-info-grid">
+                <!-- Card 1: Key Facts about the Moon -->
+                <div class="moon-card facts">
+                    <div class="card-backdrop"></div> <!-- Card background effect layer for added depth -->
+                    <h2>Key Facts</h2>
+                    <div class="fact-list"> <!-- Factsheet Grid -->
+                        <div class="fact-item">
+                            <h3>Distance from Earth</h3>
+                            <p>384,400 km (average)</p>
+                        </div>
+                        <div class="fact-item">
+                            <h3>Orbital Period</h3>
+                            <p>27.3 days</p>
+                        </div>
+                        <div class="fact-item">
+                            <h3>Diameter</h3>
+                            <p>3,474 km</p>
+                        </div>
+                        <div class="fact-item">
+                            <h3>Surface Gravity</h3>
+                            <p>1.62 m/s² (0.1654 g)</p>
+                        </div>
+                        <div class="fact-item">
+                            <h3>Temperature Range</h3>
+                            <p>-173°C to 127°C</p>
+                        </div>
+                        <div class="fact-item">
+                            <h3>Age</h3>
+                            <p>4.5 billion years</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Famous Features of the Moon -->
+                <div class="moon-card impact">
+                    <div class="card-backdrop"></div>
+                    <h2>Notable Features</h2>
+                    <div class="impact-container"> <!-- Characteristic item container -->
+                        <!-- Feature 1: Moon Sea -->
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-mountain"></i> <!-- Mountain Icons -->
+                            </div>
+                            <div class="feature-info">
+                                <h4>Maria (Seas)</h4>
+                                <p>Large, dark plains formed by ancient volcanic eruptions</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Feature 2: Craters -->
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-circle"></i> <!-- round icon (computing) -->
+                            </div>
+                            <div class="feature-info">
+                                <h4>Craters</h4>
+                                <p>Impact craters formed by meteoroids and asteroids</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Attribute 3: Highlands -->
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-mountain"></i> <!-- Mountain Icons -->
+                            </div>
+                            <div class="feature-info">
+                                <h4>Highlands</h4>
+                                <p>Light-colored, heavily cratered regions</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Feature 4: Moon Creek -->
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-route"></i> <!-- Route Icons -->
+                            </div>
+                            <div class="feature-info">
+                                <h4>Rilles</h4>
+                                <p>Long, narrow depressions resembling channels</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: History of Human Moon Exploration -->
+                <div class="moon-card exploration">
+                    <div class="card-backdrop"></div>
+                    <h2>Human Exploration</h2>
+                    <div class="mission-timeline"> <!-- Mission timeline containers -->
+                        <!-- Timeline item 1: Luna 2 -->
+                        <div class="timeline-item">
+                            <div class="timeline-date">1959</div>
+                            <div class="timeline-content">
+                                <h4>Luna 2</h4>
+                                <p>First spacecraft to reach the Moon's surface</p>
+                            </div>
+                        </div>
+                        
+                        <!-- Timeline item 2: Apollo 11 -->
+                        <div class="timeline-item">
+                            <div class="timeline-date">1969</div>
+                            <div class="timeline-content">
+                                <h4>Apollo 11</h4>
+                                <p>"That's one small step for man, one giant leap for mankind"</p>
+                            </div>
+                        </div>
+                        
+                        <!-- 时间线项3：阿波罗17号 -->
+                        <div class="timeline-item">
+                            <div class="timeline-date">1972</div>
+                            <div class="timeline-content">
+                                <h4>Apollo 17</h4>
+                                <p>Last human mission to the Moon</p>
+                            </div>
+                        </div>
+                        
+                        <!-- 时间线项4：嫦娥4号 -->
+                        <div class="timeline-item">
+                            <div class="timeline-date">2019</div>
+                            <div class="timeline-content">
+                                <h4>Chang'e 4</h4>
+                                <p>First landing on the far side of the Moon</p>
+                            </div>
+                        </div>
+                        
+                        <!-- 时间线项5：阿尔忒弥斯计划（未来） -->
+                        <div class="timeline-item future"> <!-- future类表示未来计划 -->
+                            <div class="timeline-date">Future</div>
+                            <div class="timeline-content">
+                                <h4>Artemis Program</h4>
+                                <p>NASA's plan to return humans to the Moon</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 卡片4：月球对地球的影响 -->
+                <div class="moon-card influence">
+                    <div class="card-backdrop"></div>
+                    <h2>Influence on Earth</h2>
+                    <div class="influence-content"> <!-- 影响项容器 -->
+                        <!-- 影响项1：潮汐 -->
+                        <div class="influence-item">
+                            <div class="influence-icon">
+                                <i class="fas fa-water"></i> <!-- 水波图标 -->
+                            </div>
+                            <h4>Tides</h4>
+                            <p>The Moon's gravity pulls on Earth's oceans, causing high and low tides</p>
+                        </div>
+                        
+                        <!-- 影响项2：稳定地球自转轴 -->
+                        <div class="influence-item">
+                            <div class="influence-icon">
+                                <i class="fas fa-balance-scale"></i> <!-- 天平图标 -->
+                            </div>
+                            <h4>Stabilization</h4>
+                            <p>Helps stabilize Earth's axial tilt, preventing extreme seasonal variations</p>
+                        </div>
+                        
+                        <!-- 影响项3：历法影响 -->
+                        <div class="influence-item">
+                            <div class="influence-icon">
+                                <i class="fas fa-calendar-alt"></i> <!-- 日历图标 -->
+                            </div>
+                            <h4>Calendars</h4>
+                            <p>Lunar cycles have influenced calendar systems throughout human history</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 月球资源部分 - 展示月球相关资源和趣味事实 -->
+            <div class="moon-resources-section">
+                <h2 class="section-title">Lunar Resources</h2>
+                
+                <div class="resources-container"> <!-- 资源卡片容器 -->
+                    <!-- 资源卡片1：月球地形 -->
+                    <div class="resource-card terrain">
+                        <h3>Lunar Terrain</h3>
+                        <div class="terrain-image"> <!-- 地形图像容器 -->
+                            <img src="images\moon\f3de9a48aa76cc6.jpg" alt="Lunar Terrain Map">
+                        </div>
+                        <div class="resource-description">
+                            <p>The lunar surface features mountains, valleys, and vast plains called maria. The near side (facing Earth) has more maria, while the far side is heavily cratered.</p>
+                            <div class="terrain-stats"> <!-- 地形统计数据网格 -->
+                                <div class="terrain-stat">
+                                    <span class="stat-name">Highest Point:</span>
+                                    <span class="stat-value">10.8 km (Mons Huygens)</span>
+                                </div>
+                                <div class="terrain-stat">
+                                    <span class="stat-name">Deepest Crater:</span>
+                                    <span class="stat-value">9.1 km (South Pole-Aitken Basin)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 资源卡片2：推荐阅读链接 -->
+                    <div class="resource-card reading">
+                        <h3>Further Reading</h3>
+                        <ul class="reading-links"> <!-- 链接列表 -->
+                            <li>
+                                <a href="https://moon.nasa.gov/" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    NASA's Moon Portal
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.lpi.usra.edu/lunar/" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Lunar and Planetary Institute
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://nssdc.gsfc.nasa.gov/planetary/planets/moonpage.html" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Moon Fact Sheet (NSSDC)
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.nasa.gov/mission_pages/LRO/main/index.html" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Lunar Reconnaissance Orbiter
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://moon.nasa.gov/resources/13/apollo-11-landing-site/" target="_blank">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    Apollo 11 Landing Site
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 资源卡片3：月球全景图 -->
+                    <div class="resource-card panorama">
+                        <h3>Lunar Panorama</h3>
+                        <div class="panorama-viewer"> <!-- 全景图查看器容器 -->
+                            <img src="images/moon/unnamed.jpg" alt="Lunar Surface Panorama"> <!-- 使用本地月球图片 -->
+                        </div>
+                        <p class="panorama-caption">Apollo 11 mission panorama showing Buzz Aldrin on the lunar surface, July 20, 1969.</p> <!-- 全景图说明文字 -->
+                    </div>
+                    
+                    <!-- 资源卡片4：月球趣味事实 -->
+                    <div class="resource-card quick-facts">
+                        <h3>Did You Know?</h3>
+                        <div class="fact-carousel"> <!-- 趣味事实轮播容器 -->
+                            <div class="fact-slide active"> <!-- active类表示当前显示的轮播项 -->
+                                <p><i class="fas fa-moon"></i> The Moon is gradually moving away from Earth at a rate of about 3.8 cm per year.</p>
+                            </div>
+                            <div class="fact-slide"> <!-- 轮播项2 -->
+                                <p><i class="fas fa-temperature-high"></i> Daytime temperatures on the Moon can reach 127°C (260°F), while nighttime temperatures can drop to -173°C (-280°F).</p>
+                            </div>
+                            <div class="fact-slide"> <!-- 轮播项3 -->
+                                <p><i class="fas fa-flag"></i> Six American flags were planted on the Moon during the Apollo missions, but due to solar radiation, they have likely been bleached white.</p>
+                            </div>
+                            <div class="fact-slide"> <!-- 轮播项4 -->
+                                <p><i class="fas fa-user-astronaut"></i> Only 12 humans have walked on the lunar surface, all of them American men.</p>
+                            </div>
+                            <div class="fact-navigation"> <!-- 轮播导航点容器 -->
+                                <span class="fact-dot active"></span> <!-- 当前轮播项的导航点 -->
+                                <span class="fact-dot"></span> <!-- 第二个轮播项的导航点 -->
+                                <span class="fact-dot"></span> <!-- 第三个轮播项的导航点 -->
+                                <span class="fact-dot"></span> <!-- 第四个轮播项的导航点 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 地月系统展示部分 - 可视化地球和月球的关系 -->
+            <div class="moon-earth-section">
+                <h2>The Moon and Earth</h2>
+                <div class="earth-moon-visual"> <!-- 地月系统可视化容器 -->
+                    <div class="earth-moon-container">
+                        <div class="earth"></div> <!-- 地球元素，带自转动画 -->
+                        <div class="orbit-path"></div> <!-- 月球轨道路径虚线 -->
+                        <div class="moon-orbital"></div> <!-- 轨道上的月球元素，带绕地球旋转动画 -->
+                    </div>
+                </div>
+                <div class="earth-moon-info"> <!-- 地月系统信息文本 -->
+                    <p> <!-- 地月系统说明段落 -->
+                        The Earth-Moon system is unique in our solar system. The Moon is exceptionally large 
+                        relative to its parent planet, making it more of a binary system than a typical planet-satellite 
+                        relationship. Together, they orbit around a common barycenter (center of mass) which lies 
+                        about 4,671 km from Earth's center.
+                    </p>
+                    <p> <!-- 月球远离地球说明段落 -->
+                        The Moon is gradually moving away from Earth at a rate of approximately 3.8 cm per year 
+                        due to tidal interactions. Eventually, in the very distant future, the Moon will appear 
+                        smaller in our sky and total solar eclipses will no longer be possible.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 页脚导航 - 链接到其他页面 -->
+            <div class="footer-navigation">
+                <!-- 导航按钮1：链接到行星页面 -->
+                <div class="nav-button">
+                    <a href="planet.html" class="planet-button">
+                        <span class="icon"><i class="fas fa-globe-americas"></i></span> <!-- 地球图标 -->
+                        <span class="text">Explore Planets</span> <!-- 按钮文本 -->
+                    </a>
+                </div>
+                <!-- 导航按钮2：链接到太阳页面 -->
+                <div class="nav-button">
+                    <a href="sun.html" class="sun-button">
+                        <span class="icon"><i class="fas fa-sun"></i></span> <!-- 太阳图标 -->
+                        <span class="text">Visit the Sun</span> <!-- 按钮文本 -->
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入JavaScript文件 -->
+    <script src="script.js"></script> <!-- 主JavaScript文件，处理共享功能 -->
+    <script src="moon-script.js"></script> <!-- 月球页面专用JavaScript，处理月球相关动画和交互 -->
+</body>
+</html> 

@@ -1,0 +1,158 @@
+<!DOCTYPE html> <!-- 声明文档类型为HTML5 -->
+<html lang="zh"> <!-- 指定网页语言为中文 -->
+<head>
+    <!-- 基本元数据设置 -->
+    <meta charset="UTF-8"> <!-- 字符编码设置为UTF-8，支持各种语言字符 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 响应式设计，确保网页在移动设备上正确显示 -->
+    <title>Solar System - Planetary exploration</title> <!-- 网页标题，显示在浏览器标签上 -->
+    <link rel="stylesheet" href="styles.css"> <!-- 链接到主样式表 -->
+    <!-- 引入Font Awesome图标库，用于显示各种宇宙元素的图标 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 内嵌样式，专门用于首页图标的样式设计 */
+        /* 图标容器样式 - 创建圆形黑色半透明背景 */
+        .icon-container {
+            width: 80px; /* 设置容器宽度 */
+            height: 80px; /* 设置容器高度 */
+            background: rgba(0, 0, 0, 0.5); /* 半透明黑色背景 */
+            border-radius: 50%; /* 圆形边框 */
+            display: flex; /* 使用flex布局 */
+            align-items: center; /* 垂直居中内容 */
+            justify-content: center; /* 水平居中内容 */
+            margin: 0 auto; /* 水平居中容器 */
+            transition: all 0.3s ease; /* 添加过渡效果，使动画更平滑 */
+        }
+        
+        /* 图标样式设置 */
+        .icon-container i {
+            font-size: 40px; /* 设置图标大小 */
+            color: #fff; /* 设置图标颜色为白色 */
+            transition: all 0.3s ease; /* 添加过渡效果 */
+        }
+        
+        /* 鼠标悬停时图标容器的动画效果 */
+        .structure-item:hover .icon-container {
+            transform: rotate(15deg); /* 鼠标悬停时容器旋转15度 */
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.3); /* 添加发光效果 */
+        }
+        
+        /* 鼠标悬停时图标的动画效果 */
+        .structure-item:hover .icon-container i {
+            transform: scale(1.2); /* 图标放大1.2倍 */
+        }
+        
+        /* 不同类型图标的颜色设置，模拟天体的真实颜色 */
+        .sun-icon { color: #ffcc00; } /* 太阳图标 - 黄色 */
+        .planets-icon { color: #66ccff; } /* 行星图标 - 蓝色 */
+        .asteroids-icon { color: #cc9966; } /* 小行星图标 - 棕色 */
+        .comets-icon { color: #99ccff; } /* 彗星图标 - 淡蓝色 */
+        .satellites-icon { color: #cccccc; } /* 卫星图标 - 灰色 */
+        .stars-icon { color: #ffffff; } /* 恒星图标 - 白色 */
+    </style>
+</head>
+<body>
+    <!-- 顶部导航栏 -->
+    <nav class="top-nav">
+        <div class="nav-content">
+            <div class="logo">Space Explorer</div> <!-- 网站logo/名称 -->
+            <div class="nav-links"> <!-- 导航链接区域 -->
+                <!-- 导航链接，active类表示当前页面 -->
+                <a href="index.html" class="active structure-link">STRUCTURE</a> <!-- 当前页面：太阳系结构 -->
+                <a href="planet.html" class="planet-link">PLANET</a> <!-- 行星页面链接 -->
+                <a href="sun.html" class="sun-link">SUN</a> <!-- 太阳页面链接 -->
+                <a href="moon.html" class="moon-link">MOON</a> <!-- 月球页面链接 -->
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄/横幅区域 - 大型视觉展示区域 -->
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1 class="hero-title">Planetary<br>exploration</h1> <!-- 主标题，带换行 -->
+        </div>
+    </div>
+
+    <!-- 主要内容区域 -->
+    <div class="content-section">
+        <div class="container"> <!-- 内容容器，控制宽度和边距 -->
+            <h2 class="section-title">What are the things that exist in our Solar System?</h2> <!-- 内容区域标题 -->
+            
+            <!-- 太阳系结构网格 - 使用网格布局展示不同天体 -->
+            <div class="structure-grid">
+                <!-- 太阳信息卡片 -->
+                <div class="structure-item">
+                    <div class="item-icon">
+                        <div class="icon-container">
+                            <i class="fas fa-sun sun-icon"></i> <!-- 太阳图标 -->
+                        </div>
+                    </div>
+                    <h3>Sun</h3> <!-- 太阳标题 -->
+                    <p>Sun is the biggest star in the solar system and consists of 99.86% of all the mass of the solar system. It is located in the centre and is a sphere of hot plasma. Continuous nuclear reactions take place in its core which radiates energy in the form of light and infrared radiation.</p> <!-- 太阳描述 -->
+                </div>
+
+                <!-- 行星信息卡片 -->
+                <div class="structure-item">
+                    <div class="item-icon">
+                        <div class="icon-container">
+                            <i class="fas fa-globe-americas planets-icon"></i> <!-- 行星图标 -->
+                        </div>
+                    </div>
+                    <h3>Planets</h3> <!-- 行星标题 -->
+                    <p>The solar system consists of eight planets, namely, Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus and Neptune. Mercury is closest to the sun and also the smallest planet. It has no natural satellites.</p> <!-- 行星描述 -->
+                </div>
+
+                <!-- 小行星信息卡片 -->
+                <div class="structure-item">
+                    <div class="item-icon">
+                        <div class="icon-container">
+                            <i class="fas fa-meteor asteroids-icon"></i> <!-- 小行星图标 -->
+                        </div>
+                    </div>
+                    <h3>Asteroids</h3> <!-- 小行星标题 -->
+                    <p>Asteroids are big and irregular shaped pieces of carbon, rock or metal which can be found mostly in the asteroid belt, orbiting the Sun between Mars and Jupiter. These are also often called minor planets.</p> <!-- 小行星描述 -->
+                </div>
+
+                <!-- 彗星信息卡片 -->
+                <div class="structure-item">
+                    <div class="item-icon">
+                        <div class="icon-container">
+                            <i class="fas fa-comet comets-icon"></i> <!-- 彗星图标 -->
+                        </div>
+                    </div>
+                    <h3>Comets</h3> <!-- 彗星标题 -->
+                    <p>These are small and irregular shaped objects composed of ice. It is believed that they generally come from the Kuiper belt. When comets come close to the Sun, due to the heat the ice vaporizes and leaves a beautiful tail behind them.</p> <!-- 彗星描述 -->
+                </div>
+
+                <!-- 卫星信息卡片 -->
+                <div class="structure-item">
+                    <div class="item-icon">
+                        <div class="icon-container">
+                            <i class="fas fa-satellite satellites-icon"></i> <!-- 卫星图标 -->
+                        </div>
+                    </div>
+                    <h3>Satellites</h3> <!-- 卫星标题 -->
+                    <p>The objects that revolve around the planets in the same direction as that of the planet are known as satellites. Moon is Earth's natural satellite. Satellites can also be man-made known as artificial satellites.</p> <!-- 卫星描述 -->
+                </div>
+
+                <!-- 恒星信息卡片 -->
+                <div class="structure-item">
+                    <div class="item-icon">
+                        <div class="icon-container">
+                            <i class="fas fa-star stars-icon"></i> <!-- 恒星图标 -->
+                        </div>
+                    </div>
+                    <h3>Stars</h3> <!-- 恒星标题 -->
+                    <p>A star is a celestial object that consists of a luminous spheroid of plasma which is bound by its own gravity. During the night, they are easily visible with a naked eye. These are grouped into constellations and asterisms.</p> <!-- 恒星描述 -->
+                </div>
+            </div>
+
+            <!-- 天文单位说明区域 -->
+            <div class="distance-info">
+                <p class="au-info">1 AU (Astronomical Unit) = 149,598,000 km</p> <!-- 天文单位定义 -->
+            </div>
+        </div>
+    </div>
+    <!-- 引入JavaScript文件，处理页面交互效果如星星背景、滚动动画等 -->
+    <script src="script.js"></script>
+</body>
+</html> 
